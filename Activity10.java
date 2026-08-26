@@ -12,6 +12,7 @@ public class Activity10 {
             case 3 -> System.out.println("Wednesday");
             case 4 -> System.out.println("Thursday");
             case 5 -> System.out.println("Friday");
+            case 6/7 -> System.out.println("Weekend Na!");
         }
 
         scanner.close();
