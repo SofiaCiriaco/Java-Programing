@@ -1,18 +1,17 @@
 public class Finals {
     public static void main(String[] args) {
-        if (true) {
-            System.out.println("Finals");
+         Scanner scn = new Scanner(System.in);
+         String password = "1234";
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter PassWord:");
-            String password = scanner.nextLine();
-            System.out.println("Wrong Password!");
-            String password2 = scanner.nextLine();
-            System.out.println("Enter Password:");
-            String password3 = scanner.nextLine();
-            System.out.println("Wrong Password!");
-            String password4 = scanner.nextLine();
-            System.out.println("Enter Password:");
-            String password5 = scanner.nextLine();
-            System.out.println("Access Granted!");
-        }
+         System.out.println("ENTER PASSWORD: ");
+         String entered = scn.nextLine();
+
+         while(!entered.equals(password)){
+                System.out.println("WRONG PASSWORD!");
+                System.out.println("ENTER PASSWORD: ");
+                entered = scn.nextLine();
+         }
+         System.out.println("ACCESS GRANTED!");
+         
+    }
+}
