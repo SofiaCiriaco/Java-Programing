@@ -1,11 +1,11 @@
 public class Activity5 {
     public static void main(String[] args) {
         // Variables storing student information
-        String studentName = "Sofia Alexa Ciriaco";
+        String studentName = "Sofia Ale" + "xa Ciriaco";
         int age = 17;
         int gradeLevel = 12;
         String section = "Aquinas";
-        String school = "JASMS";
+        String school = "JAS" + "MS";
         String favoriteSubject = "21st Century Literature and Contemporary Philippine Arts";
         double generalAverage = 95.86;
         boolean isHonorStudent = true;

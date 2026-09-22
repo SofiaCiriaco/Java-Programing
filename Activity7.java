@@ -5,46 +5,45 @@ import java.util.Scanner;
  * This program takes an email address from the user and analyzes its components
  * (username, domain, extensions, and lengths) using Java String methods.
  */
-public class EmailAnalyzer {
+class Activity7 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.summary);
+        try (Scanner scanner = new Scanner(System.in)) {
+            // --- INPUT ---
+            System.out.print("Enter an email address: ");
+            String email = scanner.nextLine().trim();
         
-        // --- INPUT ---
-        System.out.print("Enter an email address: ");
-        String email = scanner.nextLine().trim();
-        
-        System.out.println("\n----------------------------------------");
-        System.out.println("             EMAIL ANALYSIS             ");
-        System.out.println("----------------------------------------");
+            System.out.println("\n----------------------------------------");
+            System.out.println("             EMAIL ANALYSIS             ");
+            System.out.println("----------------------------------------");
 
         // Basic validation check before analyzing
-        if (email.contains("@") && email.contains(".")) {
+            if (email.contains("@") && email.contains(".")) {
             
             // --- STRING MANIPULATION ---
-            int atIndex = email.indexOf("@");
-            int lastDotIndex = email.lastIndexOf(".");
+                int atIndex = email.indexOf("@");
+                int lastDotIndex = email.lastIndexOf(".");
             
             // Extract components using substring
-            String username = email.substring(0, atIndex);
-            String domain = email.substring(atIndex + 1);
-            String extension = email.substring(lastDotIndex);
+                String username = email.substring(0, atIndex);
+                String domain = email.substring(atIndex + 1);
+                String extension = email.substring(lastDotIndex);
             
             // Calculate lengths
-            int totalLength = email.length();
+                int totalLength = email.length();
 
             // --- OUTPUT ---
-            System.out.printf("%-20s: %s\n", "Full Email", email);
-            System.out.printf("%-20s: %d characters\n", "Total Length", totalLength);
-            System.out.printf("%-20s: %s\n", "Username", username);
-            System.out.printf("%-20s: %s\n", "Domain Name", domain);
-            System.out.printf("%-20s: %s\n", "Domain Extension", extension);
+                System.out.printf("%-20s: %s\n", "Full Email", email);
+                System.out.printf("%-20s: %d characters\n", "Total Length", totalLength);
+                System.out.printf("%-20s: %s\n", "Username", username);
+                System.out.printf("%-20s: %s\n", "Domain Name", domain);
+                System.out.printf("%-20s: %s\n", "Domain Extension", extension);
             
-        } else {
-            System.out.println("Error: Invalid email format! Missing '@' or '.'.");
-        }
+            } else {
+                System.out.println("Error: Invalid email format! Missing '@' or '.'.");
+            }
         
-        System.out.println("----------------------------------------");
-        scanner.close();
+            System.out.println("----------------------------------------");
+        }
     }
 }

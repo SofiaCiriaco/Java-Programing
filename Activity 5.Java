@@ -8,7 +8,7 @@ public class StudentInformationSystem {
     public static void main(String[] args) {
         // --- VARIABLE DECLARATIONS & INITIALIZATION ---
         // Using correct data types and camelCase naming conventions
-        String studentName = "Sofia Alexa Marinas Ciriaco";
+        String studentName = "Sofia Alexa Marinas Ciria\u0063o";
         int age = 17;
         String gradeLevel = "Grade 12";
         String section = "ICT";
