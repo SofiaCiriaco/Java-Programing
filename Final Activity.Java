@@ -1,4 +1,8 @@
-public class Finals {
+package Finals_Lesson;
+
+import java.util.Scanner;
+
+public class Lesson1 {
     public static void main(String[] args) {
          Scanner scn = new Scanner(System.in);
          String password = "1234";
