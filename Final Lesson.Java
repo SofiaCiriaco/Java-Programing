@@ -2,7 +2,7 @@ package Finals_Lesson;
 
 import java.util.Scanner;
 
-public class Lesson1 {
+public class PasswordChecker {
     public static void main(String[] args) {
          Scanner scn = new Scanner(System.in);
          String password = "1234";
